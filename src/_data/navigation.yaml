@@ -1,10 +1,10 @@
 ---
 items:
-  - text: Menu One
+  - text: Books
     url: "#"
-  - text: Menu Two
+  - text: Essays
     url: "#"
-  - text: Menu Three
+  - text: Events
     url: "#"
   - text: Blog
     url: "/blog"

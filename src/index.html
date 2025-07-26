@@ -1,22 +1,78 @@
 ---
 layout: default
-title: Neat Starter
+title: Chenxing Han
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+  
+<header>
+  <div class="header-left">
+    <h1>
+        {{title}}
+    </h1>
+    <p>
+      Author, Speaker, Educator
+    </p>
+  </div>
+  <nav class="header-right">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Writing</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+<main>
+  <section class="about">
+    <h2>Chenxing Han is a leading author, speaker, and educator at the intersection of Buddhism and Asian America.</h2>
+    <div class="bio-and-headshot">
+      <div class="bio">
+        <p>
+          Trained in Buddhist studies and chaplaincy, she is the author of Be the Refuge: Raising the Voices of Asian American Buddhists 
+          and one long listening: a memoir of grief, friendship, and spiritual care. Her writing is taught in university, seminary, and 
+          high school classrooms across the nation.
+        </p>
+        <p>
+          Chenxing has given talks, workshops, and retreats at over a hundred communities and institutions, including Duke, 
+          Emory, UC Berkeley, Spirit Rock, and the San Francisco Zen Center. Educated at Stanford University, the Graduate Theological Union, 
+          and the Institute of Buddhist Studies, she has received fellowships from Hedgebrook, Hemera Foundation, and the University of Michigan.
+        </p>
+        <p>
+          As a founder of Roots and Refuge, May We Gather, and Listening to the Buddhists in Our Backyard, 
+          Chenxing strives to cultivate spaces for creative inquiry, spiritual kinship, and intergenerational learning. 
+          She is currently at work on a treasury of Buddhist Asian America and a nonet of essays on practice and play.
+        </p>
+        <p>
+          Click <a href="" target="_blank">here</a> for Chenxing’s CV.
+        </p>
+      </div>
+      <div class="headshot">
+        <img src="">
+      </div>
+    </div>
+    <a class="primary-button" href="/about">Learn more about Chenxing →</a>
+  </section>
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <div class="events-container">
 
-  {% include "./_includes/partials/content.html" %}
+    </div>
+    <div class="button-group">
+      <a href="/events" class="primary-button">See all events</a>
+      <a href="/speaking-inquiry" class="primary-button">Invite me to speak at your event</a>
+    </div>
+  </section>
+  <section>
+    <h2>Selected Writing</h2>
+    
+  </section>
+</main>
+
+
+
+
+  <!-- {% include "./_includes/partials/content.html" %} -->
 </div>

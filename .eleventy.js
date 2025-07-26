@@ -27,9 +27,8 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
+    "./src/static/css/styles.css": "./static/css/styles.css",
+    "./src/static/fonts": "fonts",
   });
 
   // Copy Image Folder to /_site
