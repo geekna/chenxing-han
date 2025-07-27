@@ -21,6 +21,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Main Quote 1", name: "mainquote1", widget: "markdown" }
+      - { label: "Main Quote 2", name: "mainquote2", widget: "text" }
+      - { label: "Quote", name: "quote", widgeT: "string" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
