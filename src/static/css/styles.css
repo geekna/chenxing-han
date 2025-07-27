@@ -7,7 +7,10 @@
 
 :root {
   --gold-0: #FCFBF8;
+  --gold-2: #F1EBD9;
   --gold-3: #E4D8B4; 
+  --gold-4: #D6C48F;
+  --red: #E84A3D;
 }
 
 ::selection {
@@ -45,6 +48,20 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Copernicus';
+  src: url('/fonts/Copernicus-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copernicus';
+  src: url('/fonts/Copernicus-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
 .max-width {
   max-width: 1180px;
   margin-left: auto;
@@ -59,15 +76,21 @@ body {
   padding: 80px 130px 0px;
 }
 
-
 a {
     color: #000;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: var(--red);
+}
 
 header {
   padding: 2.5rem 0;
