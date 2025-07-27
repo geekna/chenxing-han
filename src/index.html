@@ -78,8 +78,8 @@ path: home
           <li>
             <h3> {{ book.data.title }}</h3>
             <p> {{ book.data.description }}</p>
-            <p> {{ book.data.main-quote-1 }}</p>
-            <p> {{ book.data.main-quote-2 }}</p>
+            <p> {{ book.data["mainquote1"] | safe }}</p>
+            <p> {{ book.data["mainquote2"] }}</p>
             <p> {{ book.data.quote }}</p>
           </li>
         {% endfor %}

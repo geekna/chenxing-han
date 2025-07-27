@@ -1,7 +1,6 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -64,15 +63,15 @@ module.exports = function (eleventyConfig) {
 
 // Add /books as collection
 
-// module.exports = function (eleventyConfig) {
-//   eleventyConfig.addCollection("books", function (collectionApi) {
-//     return collectionApi.getFilteredByGlob("src/books/*.md");
-//   });
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection("books", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/books/*.md");
+  });
 
-//   return {
-//     dir: {
-//       input: "src",
-//       output: "_site"
-//     }
-//   };
-// };
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
+  };
+};
