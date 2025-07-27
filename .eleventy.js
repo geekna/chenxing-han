@@ -64,15 +64,15 @@ module.exports = function (eleventyConfig) {
 
 // Add /books as collection
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addCollection("books", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/books/*.md");
-  });
+// module.exports = function (eleventyConfig) {
+//   eleventyConfig.addCollection("books", function (collectionApi) {
+//     return collectionApi.getFilteredByGlob("src/books/*.md");
+//   });
 
-  return {
-    dir: {
-      input: "src",
-      output: "_site"
-    }
-  };
-};
+//   return {
+//     dir: {
+//       input: "src",
+//       output: "_site"
+//     }
+//   };
+// };
