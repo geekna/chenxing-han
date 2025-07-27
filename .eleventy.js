@@ -61,3 +61,18 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 };
+
+// Add /books as collection
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection("books", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/books/*.md");
+  });
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
+  };
+};
